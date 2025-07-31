@@ -2,11 +2,15 @@
 
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Useproducts from "../../Hooks/useproducts"
+
+
+
 
 
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
+import Useproducts from '../../Hooks/Useproducts'
+
 
 export default function Products() {
   let {addproducttocard} =useContext(CartContext)
