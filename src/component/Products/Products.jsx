@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-import Useproducts from '../../Hooks/Useproducts'
+import Useproducts from "../../Hooks/useproducts"
 
 
 import { CartContext } from '../../context/CartContext'
