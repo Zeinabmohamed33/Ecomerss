@@ -2,9 +2,10 @@ import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Slider from "react-slick";
-import Useproducts from '../../Hooks/Useproducts'
+
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
+import Useproducts from '../../Hooks/Useproducts';
 
 
 Link
