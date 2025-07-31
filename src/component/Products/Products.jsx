@@ -2,19 +2,16 @@
 
 import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-
-
-
-
-
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
-import Useproducts from '../../Hooks/Useproducts'
+import useProducts from '../../Hooks/useproducts'
+
+
 
 
 export default function Products() {
   let {addproducttocard} =useContext(CartContext)
-let {data , isError , error , isLoading } =Useproducts()
+let {data , isError , error , isLoading } =useProducts()
 
 //   function getproduct(){
 //    return  axios.get(`https://ecommerce.routemisr.com/api/v1/products`)

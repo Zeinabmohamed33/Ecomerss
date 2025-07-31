@@ -2,15 +2,18 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Useproducts from '../../Hooks/Useproducts'
+
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
+import useProducts from '../../Hooks/useproducts'
+
+
 
 export default function RecentProdcts() {
 
 
   let {addproducttocard ,  numberitems ,setnumberitems} =useContext(CartContext)
-  let {data , isError , error , isLoading } =Useproducts()
+  let {data , isError , error , isLoading } =useProducts()
 
 if(isError){
   return <h3>{error}</h3> ;

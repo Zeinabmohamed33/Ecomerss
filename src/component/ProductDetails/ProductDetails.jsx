@@ -5,13 +5,15 @@ import Slider from "react-slick";
 
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
-import Useproducts from '../../Hooks/Useproducts';
+import useProducts from '../../Hooks/useproducts';
+
+
 
 
 Link
 export default function ProductDetails() {
     let {addproducttocard} =useContext(CartContext)
-  let {data , isError , error , isLoading } =Useproducts()
+  let {data , isError , error , isLoading } =useProducts()
     let {anything ,category} = useParams()
     const [product, setproduct] = useState(null)
     const [related , setrelated] = useState([])
