@@ -1,16 +1,15 @@
 
-import { useQuery } from '@tanstack/react-query'
-import axios from 'axios'
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Useproducts from '../../Hooks/Useproducts'
+
+
 import { CartContext } from '../../context/CartContext'
 import toast from 'react-hot-toast'
 
 export default function Products() {
   let {addproducttocard} =useContext(CartContext)
 let {data , isError , error , isLoading } =Useproducts()
-
 
 //   function getproduct(){
 //    return  axios.get(`https://ecommerce.routemisr.com/api/v1/products`)

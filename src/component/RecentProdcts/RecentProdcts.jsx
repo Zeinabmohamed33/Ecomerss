@@ -1,4 +1,3 @@
-import { useQuery } from '@tanstack/react-query'
 
 // eslint-disable-next-line no-unused-vars
 import React, { useContext, useEffect, useState } from 'react'
